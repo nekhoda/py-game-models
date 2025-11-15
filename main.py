@@ -18,7 +18,7 @@ def main() -> None:
         skills = race.get("skills", [])
         players_race = Race.objects.get_or_create(
             name=race.get("name", ""),
-            description=race.get("description",""),
+            description=race.get("description", ""),
         )[0]
         Player.objects.create(
             nickname=name,

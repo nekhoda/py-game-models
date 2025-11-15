@@ -33,4 +33,4 @@ class Player(models.Model):
         null=True,
         related_name="player_guild"
     )
-    create_at = models.DateField(auto_now_add=True)
+    create_at = models.DateTimeField(auto_now_add=True)
